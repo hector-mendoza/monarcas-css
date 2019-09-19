@@ -1,19 +1,24 @@
-html, body {
+html,
+body {
     height: 100%;
     width: 100%;
     margin: 0;
+    overflow-x: hidden;
 }
+
 body {
     font-family: 'Montserrat', sans-serif;
     font-size: 13px;
 }
+
 body * {
-    border: 0!important;
+    border: 0 !important;
     margin: 0;
     padding: 0;
-    outline: 0!important;
-    box-shadow: none!important;
+    outline: 0 !important;
+    box-shadow: none !important;
 }
+
 header {
     position: absolute;
     z-index: 10000;
@@ -21,18 +26,22 @@ header {
     top: 0;
     left: 0;
 }
+
 .navbar-collapse {
     max-height: 340px;
     padding-right: 15px;
     padding-left: 15px;
     overflow-x: visible;
     border-top: 1px solid transparent;
-    box-shadow: inset 0 1px 0 rgba(255,255,255,.1);
+    box-shadow: inset 0 1px 0 rgba(255, 255, 255, .1);
     -webkit-overflow-scrolling: touch;
 }
-.navbar-default .navbar-collapse, .navbar-default .navbar-form {
-    border: none!important;
+
+.navbar-default .navbar-collapse,
+.navbar-default .navbar-form {
+    border: none !important;
 }
+
 .navbar-toggle {
     position: relative;
     float: right;
@@ -44,22 +53,183 @@ header {
     border: 1px solid transparent;
     border-radius: 4px;
 }
+
 .navbar-brand {
     float: left;
     padding: 15px;
     font-size: 18px;
     line-height: 20px;
 }
+
 .navbar-default .navbar-brand {
     color: #777;
 }
+
 header .navbar .navbar-brand {
     position: absolute;
     margin-top: -50px;
 }
-.navbar-collapse:after, .navbar-collapse:before, .navbar-header:after, .navbar-header:before, .navbar:after, .navbar:before {
+
+.navbar-collapse:after,
+.navbar-collapse:before,
+.navbar-header:after,
+.navbar-header:before,
+.navbar:after,
+.navbar:before {
     display: table;
     content: " ";
+}
+
+.container {
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.text-yellow {
+    color: #fc0;
+}
+
+.text-right {
+    text-align: right;
+}
+
+.section-title {
+    font-family: 'Oswald', sans-serif;
+    font-weight: 500;
+    font-size: 45px;
+    text-transform: uppercase;
+    margin-bottom: 0;
+}
+
+.section-subtitle {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    text-transform: uppercase;
+    font-size: 35px;
+    margin-top: 0;
+}
+
+
+.front-plantel .front-plantel-gallery {
+    padding-top: 30px;
+    width: 90%;
+    position: relative;
+    margin: 0 auto;
+    padding-left: 10px;
+}
+
+.front-plantel .front-plantel-gallery .fa-angle-left,
+.front-plantel .front-plantel-gallery .fa-angle-right {
+    position: absolute;
+    top: 50%;
+    font-size: 30px;
+    color: #fc0;
+    cursor: pointer;
+}
+
+.front-plantel .front-plantel-gallery .fa-angle-left {
+    left: -10px;
+}
+
+.front-plantel .front-plantel-gallery .fa-angle-right {
+    right: -10px;
+}
+
+.front-plantel .front-plantel-gallery .player {
+    text-align: center;
+    /* width: 100%; */
+    width: 327px;
+}
+
+.front-plantel .front-plantel-gallery .player img {
+    width: 90%;
+    max-width: 300px;
+}
+
+.front-plantel .front-plantel-gallery .player img {
+    width: 90%;
+    max-width: 300px;
+}
+
+.front-plantel .front-plantel-gallery .player a {
+    text-decoration: none !important;
+    position: relative;
+    bottom: 4px;
+    display: inline-block;
+    width: 90%;
+}
+
+.front-plantel .front-plantel-gallery .player .number {
+    font-family: 'Oswald', sans-serif;
+    font-weight: 500;
+    width: 15%;
+    text-align: center;
+    display: inline-block;
+    background-color: #D70000;
+    color: #fff;
+    padding: 7px;
+    font-size: 19px;
+    float: left;
+}
+
+.front-plantel .front-plantel-gallery .player .name {
+    position: relative;
+    display: inline-block;
+    background-color: #1e2025;
+    overflow: hidden;
+    width: 76.7%;
+    text-align: left;
+    padding: 5px;
+}
+
+
+
+.front-plantel .front-plantel-gallery .player .name .nombre {
+    color: #fff;
+    font-weight: 500;
+}
+
+.front-plantel .front-plantel-gallery .player .name .posicion {
+    color: #fc0;
+    font-weight: 500;
+}
+
+.text-white {
+    color: #fff;
+}
+
+.front-plantel .front-plantel-gallery .player .name i {
+    position: absolute;
+    top: 15px;
+    right: 10px;
+    font-size: 20px;
+    color: #fc0;
+    cursor: pointer;
+}
+
+.front-plantel .link-container {
+    text-align: center;
+}
+
+.front-plantel .front-plantel-complete {
+    width: 200px;
+    color: #fff;
+    text-decoration: none !important;
+    padding: 5px 10px;
+    text-transform: uppercase;
+    margin-top: 40px;
+    display: inline-block;
+    background-color: #D70000;
+}
+
+.front-banner-big {
+    padding: 30px 0;
+}
+
+.text-center {
+    text-align: center;
 }
 
 @media only screen and (max-width: 767px) {
@@ -67,6 +237,7 @@ header .navbar .navbar-brand {
         background: #1e2025;
         border-color: #1e2025;
     }
+
     .hidden-xs {
         display: none;
     }
@@ -78,10 +249,10 @@ header .navbar .navbar-brand {
         padding: 0;
         margin: -1px;
         overflow: hidden;
-        clip: rect(0,0,0,0);
+        clip: rect(0, 0, 0, 0);
         border: 0;
     }
-    
+
 
     .navbar-toggle .icon-bar {
         display: block;
@@ -89,29 +260,36 @@ header .navbar .navbar-brand {
         height: 2px;
         border-radius: 1px;
     }
+
     .navbar-default .navbar-toggle .icon-bar {
         background-color: #ccc;
     }
+
     .navbar-toggle .icon-bar+.icon-bar {
         margin-top: 4px;
     }
+
     header .navbar {
         background: #1e2025;
         border-color: #1e2025;
     }
+
     header .navbar .navbar-brand {
         margin-left: 10px;
-        background-color: #D70000!important;
+        background-color: #D70000 !important;
         margin-top: 0;
     }
+
     header .navbar .navbar-brand img {
         height: 55px;
     }
+
     header .navbar .navbar-collapse {
         border-color: #1e2025;
         margin-top: 40px;
-        box-shadow: none!important;
+        box-shadow: none !important;
     }
+
     .menu-mob,
     .nav .dropdown-menu {
         display: none;
@@ -120,15 +298,18 @@ header .navbar .navbar-brand {
     .menu-mob.active-menu {
         display: block;
     }
+
     html .active-menu {
         height: auto;
     }
+
     .nav {
         list-style: none;
         margin: 7.5px -15px;
     }
 
-    .nav>li, .nav>li>a {
+    .nav>li,
+    .nav>li>a {
         display: block;
         position: relative;
     }
@@ -152,12 +333,600 @@ header .navbar .navbar-brand {
         color: #fff;
     }
 
-    .navbar-default .navbar-nav>li>a:focus, .navbar-default .navbar-nav>li>a:hover {
+    .navbar-default .navbar-nav>li>a:focus,
+    .navbar-default .navbar-nav>li>a:hover {
         text-decoration: none;
         color: #333;
         background-color: transparent;
         color: #D70000;
     }
 
-    
+    .slider {
+        position: relative;
+        top: 5px;
+    }
+
+    .slider::before {
+        content: '';
+        background: rgba(0, 0, 0, .2);
+        position: absolute;
+        top: 0;
+        width: 100%;
+        height: 99.4%;
+    }
+
+    .arrows {
+        position: absolute;
+        top: 50%;
+        width: 100%;
+        height: 30px;
+    }
+
+    .arrows * {
+        background-image: url(https://fuerzamonarca.com/img/light-skin-1-retina.png);
+        background-size: 152px 225px;
+        width: 30px;
+        height: 40px;
+        cursor: pointer;
+        position: absolute;
+        bottom: 10px;
+    }
+
+    .slider .rigth {
+        background-position: -89px -103px;
+        right: 35px;
+    }
+
+    .slider .left {
+        background-position: -89px -26px;
+        left: 35px;
+    }
+
+    .slick-slide {
+        display: block;
+        float: left;
+        height: 100%;
+        min-height: 1px;
+    }
+
+    .slider .slide img {
+        width: 1197.33px;
+        height: 449px;
+        margin-top: 0px;
+        margin-left: -215px;
+    }
+
+    .front-calendar {
+        height: 184px;
+        background-color: #1e2025;
+        overflow: hidden;
+        position: relative;
+    }
+
+    .front-calendar .calendar-reel {
+        background-color: #1e2025;
+        width: 100%;
+        padding-top: 20px;
+    }
+
+    .front-calendar .fa-angle-left,
+    .front-calendar .fa-angle-right {
+        position: absolute;
+        top: 30px;
+        font-size: 30px;
+        width: 25px;
+        background-color: #1e2025;
+        cursor: pointer;
+        text-align: center;
+    }
+
+    .front-calendar .fa-angle-left {
+        left: 10px;
+        color: #fff;
+        z-index: 5;
+    }
+
+    .front-calendar .fa-angle-right {
+        right: 10px;
+        color: #fff;
+    }
+    .front-calendar .line1 .text-match span {
+        display: inline-block;
+        font-size: 14px;
+        color: #fc0;
+    }
+    .front-calendar .calendar-reel a {
+        color: #1e2025;
+        text-decoration: none !important;
+    }
+
+    .front-calendar .line1 .text-match {
+        font-weight: 500;
+        color: #fff;
+        font-size: 20px;
+        text-transform: uppercase;
+        line-height: 28px;
+        text-align: center;
+    }
+
+    .match .container {
+        display: flex;
+        justify-content: center;
+    }
+
+    .line1 {
+        height: 70px;
+    }
+
+    .line1 img {
+        height: 50px;
+    }
+
+    .cont-match {
+        margin: 0 65px;
+    }
+
+    .front-calendar .line2 {
+        height: auto;
+        padding-top: 5px;
+        background-color: #fc0;
+        font-size: 14px;
+    }
+
+    .front-calendar .line2 .text-center {
+        padding: 5px 15px;
+    }
+
+    .front-calendario-ver-completo {
+        background-color: #1e2025;
+        text-align: center;
+    }
+
+    .front-calendario-ver-completo a {
+        font-family: 'Oswald', sans-serif;
+        color: #fc0;
+        font-weight: 600;
+        font-size: 18px;
+        text-transform: uppercase;
+        text-decoration: none;
+        padding: 10px 0;
+        display: inline-block;
+    }
+
+    .with-bg {
+        background-position: center;
+        background-size: cover;
+    }
+
+    .front-news .new {
+        height: 300px;
+        background-color: #000;
+        position: relative;
+        min-height: 1px;
+        padding-right: 15px;
+        padding-left: 15px;
+    }
+
+    .front-news .new::before {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        background: rgba(0, 0, 0, .5);
+        height: 100%;
+    }
+
+    .front-news .new a {
+        display: block;
+        width: 100%;
+        height: 100%;
+    }
+
+    .front-news .new .captions {
+        position: absolute;
+
+        top: 50%;
+
+        left: 25px;
+
+        width: 100%;
+    }
+
+    .front-news .new .captions .title {
+        font-family: 'Oswald', sans-serif;
+        font-weight: 600;
+        font-size: 24px;
+        bottom: 50px;
+        left: 30px;
+        color: #fc0;
+        text-transform: uppercase;
+    }
+
+    .front-news .new .captions .subtitle {
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 300;
+        font-size: 14px;
+        bottom: 30px;
+        left: 30px;
+        color: #fff;
+    }
+
+    .front-videos {
+        background: url(https://fuerzamonarca.com/media/backgrounds/fondo-diagonales.jpg);
+        background-attachment: fixed;
+        padding: 50px 0;
+    }
+
+    .front-videos .suscribe-youtube {
+        background-color: #000;
+        height: 60px;
+        line-height: 30px;
+        margin-top: -6px;
+        padding-left: 10px;
+    }
+
+    .front-videos .suscribe-youtube img {
+        margin-right: 10px;
+        position: relative;
+        top: 7px;
+    }
+
+    .front-videos .suscribe-youtube a {
+        color: #fff;
+        text-decoration: none !important;
+    }
+
+    .front-videos .suscribe-youtube .view-more-videos {
+        font-family: 'Oswald', sans-serif;
+        font-weight: 400;
+        width: 150px;
+        color: #000;
+        background-color: #fc0;
+        height: 30px;
+        display: inline-block;
+        text-transform: uppercase;
+        width: 100% !important;
+        text-align: center;
+        margin-left: 0;
+    }
+
+    .front-rapid-links {
+        background-color: #D70000;
+        padding-top: 10px;
+    }
+
+    .front-rapid-links .background-gray {
+        background-color: #1e2025;
+        width: 100%;
+    }
+
+    .front-rapid-links .background-gray a {
+        text-decoration: none;
+        display: inline-block;
+        font-family: montserratlight;
+        background-color: #1e2025;
+        padding: 0 10px;
+    }
+
+    .front-rapid-links .background-gray img {
+        width: 100%;
+        height: auto;
+    }
+
+    .front-banners {
+        padding: 60px 0 40px;
+    }
+
+    .front-plantel {
+        background-image: url(https://fuerzamonarca.com/media/backgrounds/fondo-plantel.jpg);
+        padding: 50px 0;
+        background-attachment: fixed;
+    }
+
+    .front-estadio {
+        background-image: url(https://fuerzamonarca.com/media/backgrounds/fondo-estadio.jpg);
+        padding: 170px 0 190px;
+    }
+
+    .front-estadio a {
+        margin-top: 10px;
+        display: inline-block;
+        text-align: center;
+        padding: 10px 40px;
+        background-color: #1e2025;
+        color: #fff;
+        text-decoration: none !important;
+        text-transform: uppercase;
+    }
+
+    .front-pirma {
+        display: inline-block;
+        background-color: #dedede;
+        padding: 30px 0;
+    }
+
+    .front-pirma .front-pirma-gallery {
+        position: relative;
+        display: inline-block;
+        padding-left: 25px;
+        padding-top: 30px;
+    }
+
+    .front-pirma .front-pirma-gallery .fa-angle-left,
+    .front-pirma .front-pirma-gallery .fa-angle-right {
+        top: 50%;
+        font-size: 30px;
+        color: #fff;
+        background-color: #1e2025;
+        width: 25px;
+        text-align: center;
+        position: absolute;
+        cursor: pointer;
+    }
+
+    .front-pirma .front-pirma-gallery .fa-angle-left {
+        left: -10px;
+    }
+
+    .front-pirma .front-pirma-gallery .fa-angle-right {
+        right: -10px;
+    }
+
+    .front-pirma .front-pirma-gallery .item {
+        width: 356px;
+        height: 370px;
+    }
+
+    .imagen-producto {
+        width: 250px;
+        height: 250px;
+        background-size: cover;
+        background-position: center;
+    }
+
+    .front-pirma .front-pirma-gallery .item a {
+        color: #2a2a2a;
+        text-decoration: none !important;
+    }
+
+    .front-pirma .front-pirma-gallery .item .title {
+        background-color: #fff;
+        padding: 5px 20px;
+        width: 81.5%;
+        text-align: center;
+        height: 40px;
+    }
+
+    .front-pirma .front-pirma-gallery .item .cart {
+        background-color: #fff;
+        text-align: right;
+        width: 90%;
+        padding: 0 5px;
+    }
+
+    .front-pirma .front-pirma-gallery .item .cart i {
+        width: 30px;
+        height: 30px;
+        font-size: 20px;
+        background-color: #D70000;
+        color: #fff;
+        line-height: 30px;
+        text-align: center;
+    }
+
+    .front-galerias {
+        border-top: 3px solid #1e2025 !important;
+        background-color: #fc0;
+    }
+
+    .front-galerias .link-container {
+        text-align: center;
+        background-color: #1e2025;
+        padding-bottom: 30px;
+    }
+
+    .front-galerias .galeria-item {
+        height: 240px;
+        float: left;
+        width: 100%;
+        background-size: cover;
+        background-position: top center;
+    }
+
+    .front-galerias .galeria-item a {
+        display: block;
+        width: 100%;
+        height: 100%;
+    }
+
+    .front-galerias .front-gallery-complete {
+        width: 200px;
+        color: #1e2025;
+        text-decoration: none !important;
+        padding: 5px 10px;
+        text-transform: uppercase;
+        margin-top: 40px;
+        display: inline-block;
+        background-color: #fc0;
+    }
+
+    footer .sponsors {
+        display: inline-block;
+        position: relative;
+        width: 100%;
+    }
+
+    footer .sponsors div {
+        text-align: center;
+        background-color: #f5f5f5;
+        display: inline-block;
+        width: 100%;
+    }
+
+    .front-plantel .slick-track,
+    .front-pirma .slick-track,
+    footer .sponsors .slick-track,
+    footer .background .slick-track {
+        display: flex;
+        justify-content: center;
+    }
+
+    footer .sponsors div div {
+        width: 100%;
+        text-align: center;
+    }
+
+    footer .sponsors div div a {
+        display: block;
+        text-align: center;
+        vertical-align: middle;
+        height: 100px;
+        position: relative;
+        width: 100%;
+    }
+
+
+    footer .sponsors div div a img {
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        margin: auto;
+    }
+
+    footer .sponsors .fa-angle-left,
+    footer .sponsors .fa-angle-right {
+        position: absolute;
+        top: 25px;
+        font-size: 30px;
+        color: #000;
+        cursor: pointer;
+        z-index: 10;
+    }
+
+    footer .sponsors .fa-angle-left {
+        left: 10px;
+    }
+
+    footer .sponsors .fa-angle-right {
+        right: 10px;
+    }
+
+    footer .background {
+        background-image: url(https://fuerzamonarca.com/media/backgrounds/fondo-footer.jpg);
+        background-position: center;
+        background-size: cover;
+        background-attachment: fixed;
+        margin: 0;
+    }
+
+    footer .background .comercial-partners {
+        background-color: rgba(255, 255, 255, .1);
+        height: 77px;
+    }
+
+    footer .background .comercial-partners .container div {
+        text-align: center;
+        position: relative;
+        width: 100%;
+    }
+
+    footer .background .comercial-partners .fa-angle-left {
+        position: absolute;
+        top: 30px;
+        left: 10px;
+        font-size: 30px;
+        color: #fc0;
+        cursor: pointer;
+        z-index: 10;
+    }
+
+    footer .background .comercial-partners .fa-angle-right {
+        position: absolute;
+        top: 30px;
+        right: 10px;
+        font-size: 30px;
+        color: #fc0;
+        cursor: pointer;
+    }
+
+    footer .background .comercial-partners .container div div {
+        width: 100%;
+        text-align: center;
+    }
+
+    footer .background .comercial-partners .container div div a {
+        display: block;
+        text-align: center;
+        vertical-align: middle;
+        height: 77px;
+        position: relative;
+        width: 100%;
+    }
+
+    footer .background .comercial-partners .container div div a img {
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        margin: auto;
+    }
+
+    footer .background .liga-mx-logo {
+        height: 100px;
+        text-align: center;
+    }
+
+    footer .background .footer-monarcas-logo img {
+        max-height: 60px;
+    }
+
+    footer .background .footer-monarcas-logo .privacy {
+        margin: 20px auto;
+        text-transform: uppercase;
+        display: inline-block;
+        color: #fff !important;
+        text-decoration: none !important;
+    }
+
+    footer .copyrights {
+        background: #202020;
+        text-align: center;
+        padding: 20px 0;
+        color: #fff;
+    }
+
+    footer .copyrights a {
+        color: #cf553d !important;
+        text-decoration: none !important;
+        font-weight: 700;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .slider .slide img {
+        height: 281px;
+        width: 749.333px;
+        margin-top: 0px;
+        margin-left: -134.5px;
+    }
+    .cont-match {
+        margin: 0 15px;
+        width: 50%;
+    }
+    .front-plantel .front-plantel-gallery .player {
+        width: 198px;
+    }
+    .front-plantel .front-plantel-gallery .player .name {
+        width: 71%;
+    }
+    .front-pirma .front-pirma-gallery .item {
+        width: 213px;
+    }
+    footer .sponsors .slick-slide:last-child {
+        display: none;
+    }
 }
